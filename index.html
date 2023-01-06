@@ -1,131 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body bgcolor="yellow">
-    <h1><ins><center>Form</center></ins></h1>
-<h2><center>
-    Please Fill This Form Your All <br>Information Will Be Private
-</center></h2>
-
-<fieldset>
-
-<h1><ins>INFORMATION</ins></h1>
-
-<form action="">
-<p>
-    NAME :
-
-
-    <input type="text" name="NAME" size="15" maxlength="30">
-
-</p>
-
-<p>
-    FATHER :
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(#0cbaba, #369);
+    }
+    fieldset {
+      margin: 50px auto;
+    width: 300px;
+    }
+    form {
+      margin: 50px auto;
+      
+    }
+    .btn{
+        background-color: black;
+        color: aliceblue;
+        border-radius: 6px;
+    }
+    .reg{
+        text-align: center;
+        border: 2px ;
+        border-color: black;
+        border-style: inherit;
     
+    }
+  </style>
 
-    <input type="text" name="FATHER" size="13" maxlength="10">
+  <body>
+    <h1>
+      <ins>
+        <center>Form</center>
+      </ins>
+    </h1>
+    <h2>
+      <center>
+        Please Fill This Form Your All <br />Information Will Be Private
+      </center>
+    </h2>
 
-</p>
+    <fieldset>
+        <legend class="reg">Registraton Form</legend>
+        <form action="">
+        <label>Name</label>
+        <br />
+        <input type="text" name="NAME" size="15" maxlength="30" />
+        <br />
+        <br />
+        <label>Father Name</label>
+        <br />
+        <input type="text" name="FATHER" size="13" maxlength="30" />
+        <br />
+        <br>
+        <label> Phone NUMBER</label>
+        <br>
+        <input type="number" name=" PHONE NUMBER" size="20" maxlength="11" />
+        <br>
+        <br>
+        <label>Email</lable>
+            <br>
+          <input type="Email" name="E-Mail" size="20" maxlength="30" />
+            <br>
+            <br>
+            <label> Password</label>
+        <br>
+        <input type="password" name="password">
+        <br>
+        <br>
+        <label>Age</label>
+        <br>
+        <input type="text" name="AGE" size="5" maxlength="2" />
+<br>
+<br>
+<br>
+          GANDER :
 
-<p>
-    PHONE NUMBER :
+          <br />
+          <input type="radio" name="gander" value="Male" /> Male
+          <input type="radio" name="gander" value="Female" /> Female
+        </p>
 
-    <input type="text" name=" PHONE NUMBER" size="15" maxlength="11">
+        <p>
+          PROVINCE :
 
+          <select name="Devices">
+            <option value="SINDH">SINDH</option>
+            <option value="PUNJAB">PUNJAB</option>
+            <option value="KPK">KPK</option>
+            <option value="BALOCHISTAN">BALOCHISTAN</option>
+            <option value="KASHMIR">KASHMIR</option>
+          </select>
+        </p>
 
+        <p>
+          IMAGE :
 
-</p>
+          <input type="file" name="image" /> <br />
+          <input type="submit" value="upload" />
+        </p>
 
-<p>
-    E-Mail :
+        <p>
+          SELECT THE VEHICLE YOU HAVE TRAVELLED
 
+          <br />
+          <select name="TRAVELLED" size="3" multiple-multiple>
+            <option value="BIKE">BIKE</option>
+            <option value="CAR">CAR</option>
+            <option value="BUS">BUS</option>
+            <option value="BICYCLE">BICYCLE</option>
+          </select>
+        </p>
 
-    <input type="text" name="E-Mail" size="20" maxlength="30">
-
-</p>
-
-<p>
-    PASSWORD :
-
-
-    <input type="" name="PASSWORD" size="20" maxlength="30">
-
-</p>
-
-<p>
-    AGE :
-<input type="text" name="AGE" size="5" maxlength="2">
-
-</p>  
-
-<p>
-    GANDER :
-
-
-    <br>
-    <input type="radio" name="gander" value="Male"> Male
-    <input type="radio" name="gander" value="Female"> Female
-
-</p>
-
-<p>
-    PROVINCE : 
-
-
-   <select name="Devices">
-
-
-    <option value="SINDH">SINDH</option> 
-    <option value="PUNJAB">PUNJAB</option>
-    <option value="KPK">KPK</option>
-    <option value="BALOCHISTAN">BALOCHISTAN</option>
-    <option value="KASHMIR">KASHMIR</option>
-
-
-</select>
-</p>
-
-<p>
-    IMAGE :
-
-    <input type="file" name="image"> <br>
-    <input type="submit" value="upload">
-
-
-
-
-
-
-
-</p>
-
-<p>
-    SELECT THE VEHICLE YOU HAVE TRAVELLED 
-
-
-  <br>
-  <select name="TRAVELLED" size="3" multiple-multiple >
-
-   <option value="BIKE">BIKE</option>
-   <option value="CAR">CAR</option>
-   <option value="BUS">BUS</option>
-   <option value="BICYCLE">BICYCLE</option>
-
-
-</select>
-</p>
-
-
-
-
-
-</form></fieldset>
-
-</body>
+        <button class="btn">submit</button>
+      </form>
+    </fieldset>
+  </body>
 </html>
